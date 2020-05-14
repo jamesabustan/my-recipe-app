@@ -16,12 +16,12 @@ describe('recipes', () => {
      });
         
      describe('GET /recipe', function() {
-        it('should return all recipes', function(done) {
+        it('should return a recipe', function(done) {
           chai.request(app)
           .get('/recipe')
           .end(function(err, res) {
           res.should.have.status(200);
-          res.should.be.json; // jshint ignore:line
+          res.should.be.json; 
           res.body.should.be.a('array');
           res.body.length.should.equal(4);
           res.body[0].should.have.property('name');
