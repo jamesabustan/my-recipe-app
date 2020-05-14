@@ -1,5 +1,11 @@
-### my-recipe-app
+### my-recipe-app - project
+
 ### Recipe journal that let's you add, edit and delete your fave recipes (inputs recipe name, cooking time, level, url link)
+
+* A recipe app that allows users to store their Recipe Journal online 
+* User able to create and add entry, edit their recipes, and delete recipe entries
+* User able to view and click on chosen recipes in the /recipe route 
+* Data is passed from the form to the server which links to Postgres database
 
 
 ### Tech used 
@@ -35,7 +41,10 @@
 * Improve on UI (once entry is made no back button/ or view recipes button)
 * Add image feature to include in entry 
 * Learn proper setup for tests, struggled with assertions not being compatible
+* Meet the criteria of 40% test pass mark
 * Refactor codes for better readability 
+
+
 
 
 #### Creating the Recipe App 
