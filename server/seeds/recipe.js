@@ -17,13 +17,20 @@ exports.seed = function(knex) {
       }, {
         name: 'Chocolate fudge crinkle biscuits',
         cook_time: '30 mins',
-        level: 'Easy',
+        level: 'Medium',
         url: 'https://www.bbcgoodfood.com/recipes/chocolate-fudge-crinkle-biscuits'
       }, {
         name: 'Bacon & mushroom pasta',
         cook_time: '20 mins',
         level: 'Easy',
         url: 'https://www.bbcgoodfood.com/recipes/bacon-mushroom-pasta'
+      }, {
+        name: 'Chicken biryani',
+        cook_time: '50 mins',
+        level: 'Medium',
+        url: 'https://www.bbcgoodfood.com/recipes/chicken-biryani'
       }];
+
+      return knex('recipe').insert(recipes);
     });
 };
