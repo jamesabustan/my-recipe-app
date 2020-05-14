@@ -13,6 +13,7 @@
 * Create database - Knex, create migration recipes
 * Create seeds sample data
 * Create routes
+* Create DB connection - create Knex.js
 * List all data with GET /recipe
 * Implement Bootstrap
 * Display New Form with /recipe/new
