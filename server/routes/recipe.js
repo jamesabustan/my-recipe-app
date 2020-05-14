@@ -109,8 +109,8 @@ router.put('/:id', (req,res) => {
 })
 
 // Delete a recipe after validation that recipe id exists and render /recipe page
-router.delete('/:id', (res,req) => {
-  const id = req.params.id
+router.delete('/:id', (req,res) => {
+  const id = req.params.id;
   if(typeof id != 'undefined') {
     knex('recipe')
     .where('id', id)
