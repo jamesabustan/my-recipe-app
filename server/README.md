@@ -19,10 +19,11 @@
 * Refactor repeated functions in recipe.js route file
 * Use Middleware 'method_override' to allow forms action='POST' to have functionality of edit by appending ?_method=PUT in the form ACTION tag
 
+### Struggles
 * Issue where form ONLY does GET and POST request and unable to PUT. Researched and found 'method-override'
 
 
-
+### Steps Checklist
 * Generate Express App
 * Create database - Knex, create migration recipes
 * Create seeds sample data
@@ -37,5 +38,6 @@
 * Show single recipe with GET /recipe/:id 
 * Show an Edit recipe form with with GET /recipe/:id/edit
 * Update recipe with PUT /recipe/:id
+* Delete a recipe with DELETE /recipe/:id
 
 

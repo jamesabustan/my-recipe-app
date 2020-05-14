@@ -108,6 +108,22 @@ router.put('/:id', (req,res) => {
   }
 })
 
-
+// Delete a recipe after validation that recipe id exists and render /recipe page
+router.delete('/:id', (res,req) => {
+  const id = req.params.id
+  if(typeof id != 'undefined') {
+    knex('recipe')
+    .where('id', id)
+    .del()
+    .then(() => {
+      res.redirect('/recipe');
+    });
+  } else {
+    res.status(500);
+    res.render('error', {
+      message: 'Invalid ID'
+    })
+  }
+})
 
 module.exports = router;
