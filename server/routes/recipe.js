@@ -87,7 +87,26 @@ router.post('/', (req, res) => {
   }
 });
 
-
+// PUT request to update the recipe and 
+router.put('/:id', (req,res) => {
+  if(validRecipe (req.body)) {
+    const recipe = {
+      name: req.body.name,
+      level: req.body.level,
+      cook_time: req.body.cook_time,
+      url: req.body.url
+    };
+    knex('recipe')
+    .where ('id', req.params.id)
+    .update(recipe, 'id')
+    .then(() => {
+    res.redirect(`/recipe/${req.params.id}`);
+    })
+  } else {
+    res.status(500);
+    res.render('error', {message : 'Invalid recipe update'})
+  }
+})
 
 
 

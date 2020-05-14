@@ -19,6 +19,8 @@
 * Refactor repeated functions in recipe.js route file
 
 
+* Issue where form ONLY does GET and POST request and unable to PUT. Researched and found 'method-override'
+
 
 
 * Generate Express App
