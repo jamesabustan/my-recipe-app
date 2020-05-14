@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   knex('recipe')
   .select()
   .then(recipes =>{
-    res.render('all', { recipes: recipes });
+    res.render('all', { recipes });
   });
 
 });

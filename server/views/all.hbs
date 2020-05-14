@@ -1,6 +1,13 @@
-{{!-- //iterate the recipes
-// check handlebars documentation  --}}
+{{!-- iterate the recipes and grab the data --}}
+
 
 {{#each recipes}}
-    <h2>{{name}}</h2>
-{{/each}}
+<div class="card" style="width: 40rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{level}} : {{cook_time}}</h6>
+    {{!-- <p class="card-text">{{url}}</p> --}}
+    <a href="{{url}}" class="card-link">{{url}}</a>
+  </div>
+</div>
+{{/each}} 
