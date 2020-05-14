@@ -13,6 +13,26 @@ router.get('/', (req, res) => {
   });
 });
 
+/* Get requests to render single recipe ID*/
+router.get('/:id', (req, res) => {
+  const id = req.params.id;
+  if(typeof id != 'undefined') {
+    knex('recipe')
+    .select()
+    .where('id', id)
+    .first()
+    .then(recipe => {
+      res.render('single', recipe);
+    });
+  } else {
+    res.status(500);
+    res.render('error', {
+      message: 'Invalid ID'
+    })
+  }
+});
+
+
 /* Get requests to add new recipe*/
 /* create new view file in hbs to render*/
 router.get('/new', (req, res) => {
