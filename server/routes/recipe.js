@@ -39,6 +39,26 @@ router.get('/new', (req, res) => {
   res.render('new');
 });
 
+/* Get request to show edit page*/
+router.get('/:id/edit', (req, res) => {
+  const id = req.params.id;
+  if(typeof id != 'undefined') {
+    knex('recipe')
+    .select()
+    .where('id', id)
+    .first()
+    .then(recipe => {
+      res.render('edit', recipe);
+    });
+  } else {
+    res.status(500);
+    res.render('error', {
+      message: 'Invalid ID'
+    })
+  }
+});
+
+
 // validation user must only be able to enter string with no white spaces, complete form
 function validRecipe(recipe) {
   return typeof recipe.name == 'string' && recipe.name.trim() != '' 

@@ -1,0 +1,30 @@
+{{!-- // create form to display for user
+// send data to server  --}}
+
+<form class="form" action="/recipe" method="post">
+    <div class="form-group">
+        <label for="name">Recipe</label>
+        <input value="{{name}}" type="text" class="form-control" id="name" placeholder="Add Recipe" name="name">
+    </div>
+
+    <div class="form-group">
+        <label for="level" id="level">Cooking Level </label>
+        <select value="{{level}}" class="form-control form-control-md" name='level'>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="cook_time">Cooking Time</label>
+        <input value="{{cook_time}}" type="text" class="form-control" id="cook_time" placeholder="Insert Cooking time (ie. 20 mins)" name='cook_time'>
+    </div>
+
+    <div class="form-group">
+        <label for="url">URL</label>
+        <input value="{{url}}" type="text" class="form-control" id="url" placeholder="Insert URL" name='url'>
+    </div>
+
+    <button type="submit" class="btn btn-default btn-danger">Update</button>
+</form>

@@ -2,6 +2,7 @@
 ### Recipe journal that let's you log your fave recipes (inputs recipe name, cooking time, level, url link)
 
 
+### Tech used 
 * Express.js for routes
 * Handlebars.js templating language
 * Knex.js Dabatabase migrations, seeds and queries
@@ -18,8 +19,6 @@
 
 
 
-
-
 * Generate Express App
 * Create database - Knex, create migration recipes
 * Create seeds sample data
@@ -28,10 +27,11 @@
 * List all data with GET /recipe
 * Implement Bootstrap and apply basic card styling on hbs files
 * Create Form for user to input recipe data
-* Display New Form with /recipe/new
-* Add data entry with POST /recipe
-* Show single recipe with GET /recipe/:id
-* Edit recipe with with GET /recipe/:id/edit
+* Display Form via HBS file for display
+* Add data entry with POST /recipe 
+* Pass Data from form to server to database 
+* Show single recipe with GET /recipe/:id 
+* Show an Edit recipe form with with GET /recipe/:id/edit
 * Update recipe with PUT /recipe/:id
 
 
