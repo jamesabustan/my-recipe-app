@@ -3,7 +3,7 @@
 
 
 * Express.js for routes
-* Handlebars.js server side templates
+* Handlebars.js templating language
 * Knex.js Dabatabase migrations, seeds and queries
 * Postgres for Database 
 * Mocha Chai for testing

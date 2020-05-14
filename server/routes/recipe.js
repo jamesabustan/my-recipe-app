@@ -1,9 +1,17 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET home page. */
+const knex = require('../db/knex');
+
+/* Router mounted on localhost 3000/recipe */
+/* Get requests to pass through all handlebars*/
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Recipe' });
+  knex('recipe')
+  .select()
+  .then(recipes =>{
+    res.render('all', { recipes: recipes });
+  });
+
 });
 
 module.exports = router;
