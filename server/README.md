@@ -8,6 +8,15 @@
 * Postgres for Database 
 * Mocha Chai for testing
 
+### Learning points
+* Setting up express and connecting to Postgres Database
+* Validation and error handling - using trim() to prevent user entering whitespaces on both sides
+* Using Handlebars
+* Frequent commits and working on branches
+* Document as I go along
+
+
+
 
 * Generate Express App
 * Create database - Knex, create migration recipes
@@ -16,8 +25,11 @@
 * Create DB connection - create Knex.js
 * List all data with GET /recipe
 * Implement Bootstrap and apply basic card styling on hbs files
+* Create Form for user to input recipe data
 * Display New Form with /recipe/new
 * Add data entry with POST /recipe
 * Show single recipe with GET /recipe/:id
 * Edit recipe with with GET /recipe/:id/edit
 * Update recipe with PUT /recipe/:id
+
+
