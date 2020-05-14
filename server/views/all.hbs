@@ -4,10 +4,9 @@
 {{#each recipes}}
 <div class="card" style="width: 40rem;">
   <div class="card-body">
-    <h5 class="card-title">{{name}}</h5>
+    <a href="/recipe/{{id}}" class="card-title">{{name}}</a>
     <h6 class="card-subtitle mb-2 text-muted">{{level}} : {{cook_time}}</h6>
-    {{!-- <p class="card-text">{{url}}</p> --}}
-    <a href="{{url}}" class="card-link">{{url}}</a>
+    {{!-- <a href="{{url}}" class="card-link">{{url}}</a> --}}
   </div>
 </div>
 {{/each}} 
