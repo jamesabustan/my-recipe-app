@@ -32,7 +32,6 @@ router.get('/:id', (req, res) => {
   }
 });
 
-
 /* Get requests to add new recipe*/
 /* create new view file in hbs to render*/
 router.get('/new', (req, res) => {
