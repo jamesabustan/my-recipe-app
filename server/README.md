@@ -11,9 +11,11 @@
 ### Learning points
 * Setting up express and connecting to Postgres Database
 * Validation and error handling - using trim() to prevent user entering whitespaces on both sides
-* Using Handlebars
+* Using Handlebars 
+* Passing form data down to server and inserting it to database
 * Frequent commits and working on branches
-* Document as I go along
+* Document after every feature is completed
+
 
 
 
