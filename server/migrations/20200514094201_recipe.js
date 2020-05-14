@@ -1,4 +1,4 @@
-// Table info
+// recipe Table info
 // id 
 // name : text
 // cook_time : text (optional)

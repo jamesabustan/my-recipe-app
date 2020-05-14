@@ -1,5 +1,5 @@
-# my-recipe-app
-
+### my-recipe-app
+### Recipe journal that let's you log your fave recipes (inputs recipe name, cooking time, level, url link)
 
 
 * Express.js for routes
