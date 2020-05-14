@@ -11,7 +11,18 @@ router.get('/', function(req, res, next) {
   .then(recipes =>{
     res.render('all', { recipes });
   });
-
 });
+
+/* Get requests to add new recipe*/
+/* create new view file in hbs to render*/
+router.get('/new', function(req, res, next) {
+  res.render('new');
+});
+
+
+
+
+
+
 
 module.exports = router;

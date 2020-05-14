@@ -15,7 +15,7 @@
 * Create routes
 * Create DB connection - create Knex.js
 * List all data with GET /recipe
-* Implement Bootstrap
+* Implement Bootstrap and apply basic card styling on hbs files
 * Display New Form with /recipe/new
 * Add data entry with POST /recipe
 * Show single recipe with GET /recipe/:id
