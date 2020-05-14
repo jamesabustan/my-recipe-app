@@ -9,8 +9,13 @@ router.get('/', (req, res) => {
   knex('recipe')
   .select()
   .then(recipes =>{
-    res.render('all', { recipes });
+    res.render('all', {recipes});
   });
+});
+
+/* Get requests to add new recipe*/
+router.get('/new', (req, res) => {
+  res.render('new');
 });
 
 /* Get requests to render single recipe ID*/
@@ -32,11 +37,6 @@ router.get('/:id', (req, res) => {
   }
 });
 
-/* Get requests to add new recipe*/
-/* create new view file in hbs to render*/
-router.get('/new', (req, res) => {
-  res.render('new');
-});
 
 /* Get request to show edit page*/
 router.get('/:id/edit', (req, res) => {
