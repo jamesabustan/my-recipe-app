@@ -17,7 +17,7 @@
 * Frequent commits and working on branches
 * Document after every feature is completed
 * Refactor repeated functions in recipe.js route file
-
+* Use Middleware 'method_override' to allow forms action='POST' to have functionality of edit by appending ?_method=PUT in the form ACTION tag
 
 * Issue where form ONLY does GET and POST request and unable to PUT. Researched and found 'method-override'
 
