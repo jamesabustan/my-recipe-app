@@ -1,7 +1,7 @@
 {{!-- // create form to display for user
 // send data to server  --}}
 
-<form class="form" action="/recipe/{{id}}" method="put">
+<form class="form" action="/recipe/{{id}}?_method=PUT" method="post">
     <div class="form-group">
         <label for="name">Recipe</label>
         <input value="{{name}}" type="text" class="form-control" id="name" placeholder="Add Recipe" name="name">
