@@ -16,6 +16,8 @@
 * Passing form data down to server and inserting it to database
 * Frequent commits and working on branches
 * Document after every feature is completed
+* Refactor repeated functions in recipe.js route file
+
 
 
 
