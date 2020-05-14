@@ -12,6 +12,7 @@
 * Generate Express App
 * Create database - Knex, create migration recipes
 * Create seeds sample data
+* Create routes
 * List all data with GET /recipe
 * Implement Bootstrap
 * Display New Form with /recipe/new
